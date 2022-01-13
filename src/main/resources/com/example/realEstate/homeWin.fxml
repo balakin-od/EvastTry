@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.realEstate.HomeWin">
+   <children>
+      <TextField layoutX="147.0" layoutY="100.0" prefHeight="23.0" prefWidth="301.0" />
+      <ComboBox layoutX="391.0" layoutY="43.0" prefWidth="150.0" />
+      <ComboBox layoutX="225.0" layoutY="43.0" prefWidth="150.0" />
+      <ComboBox layoutX="55.0" layoutY="43.0" prefWidth="150.0" />
+      <TextField layoutX="56.0" layoutY="146.0" />
+      <TextField layoutX="56.0" layoutY="188.0" />
+      <TextField layoutX="392.0" layoutY="146.0" />
+      <TextField layoutX="392.0" layoutY="188.0" />
+      <TextField layoutX="226.0" layoutY="146.0" />
+      <TextField layoutX="226.0" layoutY="188.0" />
+   </children>
+</AnchorPane>
