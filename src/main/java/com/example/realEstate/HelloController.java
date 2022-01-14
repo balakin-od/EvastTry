@@ -14,7 +14,7 @@ public class HelloController {
 
     @FXML
     private void bLog(ActionEvent actionEvent) {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainClass.class.getResource("mainWindow.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(MainClass.class.getResource("clientWin.fxml"));
         Scene scene = null;
         try {
             scene = new Scene(fxmlLoader.load());

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.realEstate.ClientWin">
+   <children>
+      <TableView fx:id="tableClients" layoutX="21.0" layoutY="22.0" prefHeight="328.0" prefWidth="260.0">
+        <columns>
+          <TableColumn fx:id="be" prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <TableView layoutX="326.0" layoutY="22.0" prefHeight="328.0" prefWidth="260.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+      <Button layoutX="71.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddClient" text="Add" />
+      <Button layoutX="131.0" layoutY="361.0" mnemonicParsing="false" onAction="#EditClient" text="Edit" />
+      <Button layoutX="191.0" layoutY="361.0" mnemonicParsing="false" onAction="#DeleteClient" text="Delete" />
+      <Button layoutX="366.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddRil" text="Add" />
+       <Button layoutX="426.0" layoutY="361.0" mnemonicParsing="false" onAction="#EditRil" text="Edit" />
+       <Button layoutX="486.0" layoutY="361.0" mnemonicParsing="false" onAction="#DeleteRil" text="Delete" />
+   </children>
+</AnchorPane>
