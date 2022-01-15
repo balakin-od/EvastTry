@@ -13,8 +13,8 @@
       </TableView>
       <TableView layoutX="326.0" layoutY="22.0" prefHeight="328.0" prefWidth="260.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="C1" />
-          <TableColumn prefWidth="75.0" text="C2" />
+          <TableColumn  prefWidth="75.0"  />
+          <TableColumn prefWidth="75.0"  />
         </columns>
       </TableView>
       <Button layoutX="71.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddClient" text="Add" />

@@ -12,5 +12,21 @@ public class Client {
         this.idty = idty;
         this.name = name;
         this.salary = salary;
+
+
+
     }
+    public Integer getId() {
+        return id;
+    }
+
+    public Integer getIdty() {
+        return idty;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+
 }

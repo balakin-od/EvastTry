@@ -25,11 +25,17 @@ public class ClientWin {
     Connection connection;
 
     @FXML
-    private void initialize()
-    {
+    private void initialize() throws SQLException {
         be.setCellValueFactory(new PropertyValueFactory<Client, Integer>("id"));
-
+        connection = con.Connect();
+        Statement statement =  connection.createStatement();
+        String sql = "Select * From Grants";
+        ResultSet rs = statement.executeQuery(sql);
+        while (rs.next()){
+            clients.add(new Client(rs.getInt(1), rs.getInt(2),rs.getString(3), rs.getInt(4)));
+        }
         tableClients.setItems(clients);
+
     }
 
     @FXML
@@ -68,6 +74,8 @@ public class ClientWin {
     private void DeleteRil(ActionEvent actionEvent) {
 
     }
+
+
 
 
 }
