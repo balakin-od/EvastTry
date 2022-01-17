@@ -24,7 +24,7 @@ public class Captcha {
     }
     double up = 2;
     double pass = 2;
-    double height = 200;
+    double height = 190;
     double left = 36;
     double weight = 2;
     double newLine = left;
@@ -38,18 +38,32 @@ public class Captcha {
       newLine = newLine + weight + pass;
       gc.fillRect(newLine ,up,weight,height + 10);
       newLine = newLine + weight + pass;
-      int[] arr = Code(Bar("123456", "5"));
+      String bar = Bar("123456", "5");
+      int[] arr = Code(bar);
       for(int i = 0; i < 15; i++)
       {
-          weight = arr[i];
-          System.out.println(arr[i]);
-          gc.fillRect(newLine, up, weight, height );
+          if(arr[i] == 0){
+              weight =  2 * 2;
+          }
+          else {
+              weight = arr[i] * 2;
+              gc.fillRect(newLine, up, weight, height);
+          }
           newLine = newLine + weight + pass;
       }
        gc.fillRect(newLine, up, 2, height + 10);
        newLine = newLine + 2 + pass;
        gc.fillRect(newLine, up, 2, height + 10);
+       Text text = new Text();
+       text.setText(bar);
+       Font font = new Font("Arial", 14);
+       text.setFont(font);
+       gc.setFont(font);
+       gc.fillText(text.getText(), left  , height + 25);
+
    }
+
+
 
    private int[] Code(String s){
        int[] arr = new int[s.length()];
